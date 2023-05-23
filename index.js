@@ -228,7 +228,7 @@ function game(myChoise,pcChoise)
       return "Kaybettin !"
     }
 }
-console.log("bigisayarın seçimi : "+String(pcChoise))
+console.log("bigisayarın seçimi : "+String(pcChoise));
 console.log(game(myChoise,pcChoise));
 
 ####################################################################################
@@ -367,23 +367,23 @@ Aşağıdakileri sesliHarfSayaci fonskiyonunda yap.
 İPUCU - .includes() methoduna bakabilirsin. (https://www.w3schools.com/jsref/jsref_includes.asp)
 */
 /*
-function sesliHarfSayaci(value) 
-{
-  let sesliHarf = ["A","a","E","e","O","o","Ü","ü","Ö","ö","U","u","I","ı","İ","i"];
-  let index_num = 0;
-  for ( i in value)
-  {
-    for (j in sesliHarf)
-    {
-      if (i === sesliHarf[j] )
-      {
-        return  index_num+=1;
-      }
+
+let arguman = "EEMesudAYDIN";
+const sesliHarfler = ["A","a","E","e","I","ı","İ","i","O","o","Ö","ö","U","u","Ü","ü"];
+let num = 0;
+function sesliHarfSayaci(value) {
+    
+    for (let i=0; i<value.lenght;i++) {
+        for (let k =0; k<sesliHarfler.lenght;k++){
+            if (value[i] === sesliHarfler[k]){
+               num+=1;
+            }
+        }
     }
-  }
-  
+return num;
 }
-sesliHarfSayaci("MesudAydın")
+console.log(sesliHarfSayaci(arguman));
+
 */
 
 /* Lütfen bu satırın alt tarafını değiştirmeyin */
